@@ -15,6 +15,7 @@ module.exports = function (options) {
     const { AUTH_SERVER } = options;
     let ret = qualifyURL(loginURI, true);
     let redirectURL = AUTH_SERVER  + '?ReturnUrl=' + ret;
+    console.log(redirectURL + '++++++++++++++++');
     location.href = redirectURL;
   }
 
